@@ -1,0 +1,123 @@
+<html>
+  <title>Menyalakan Lampu</title>
+  <body>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <div class="flex justify-center items-center gap-5">
+      <!-- lampu 1 -->
+      <div class="flex flex-col gap-3">
+        <img src="lampu.png" alt="" height="300px" width="300px" id="lampu1" />
+        <div class="flex justify-center gap-3">
+          <h2 class="font-bold text-red-500 bg">off</h2>
+          <label class="inline-flex justify-center items-center cursor-pointer">
+            <input
+              type="checkbox"
+              value=""
+              id="toggle1"
+              class="sr-only peer"
+              onchange="saklar()"
+             
+            />
+            <div
+              class="relative w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600"
+            ></div>
+            <span
+              class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300"
+            ></span>
+          </label>
+          <h2 class="font-bold text-blue-500">on</h2>
+        </div>
+        <!-- <button
+          onclick="saklar('on')"
+          class="bg-indigo-500 hover:bg-fuchsia-500 rounded-lg text-white text-xl"
+        >
+          Nyalakan lampu 1
+        </button>
+        <button
+          onclick="saklar('off')"
+          class="bg-red-500 hover:bg-fuchsia-500 rounded-lg text-white text-xl"
+        >
+          Matikan lampu 1
+        </button> -->
+      </div>
+
+      <!-- lampu2 -->
+      <div class="flex flex-col gap-3">
+        <img src="lampu.png" alt="" height="300px" width="300px" id="lampu2" />
+<div  class="flex justify-center gap-3">
+    <h2 class="font-bold text-red-500 bg">off</h2>
+        <label class="inline-flex justify-center items-center cursor-pointer">
+          <input
+            type="checkbox"
+            value=""
+            id="toggle2"
+            onchange="saklar()"
+            class="sr-only peer"
+            
+          />
+          <div
+            class="relative w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600"
+          ></div>
+          <span
+            class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300"
+          ></span>
+          <h2 class="font-bold text-blue-500">on</h2>
+        </label>
+    </div>
+
+        <!-- <button
+          onclick="saklar('on2')"
+          class="bg-indigo-500 hover:bg-fuchsia-500 rounded-lg text-white text-xl"
+        >
+          Nyalakan lampu 2
+        </button>
+        <button
+          onclick="saklar('off2')"
+          class="bg-red-500 hover:bg-fuchsia-500 rounded-lg text-white text-xl"
+        >
+          Matikan lampu 2
+        </button> -->
+      </div>
+
+      <!-- lampu3 -->
+      <div class="flex flex-col gap-3">
+        <img src="lampu.png" alt="" height="300px" width="300px" id="lampu3" />
+<div class="flex justify-center gap-3">
+    <h2 class="font-bold text-red-500 bg">off</h2>
+        <label class="inline-flex justify-center items-center cursor-pointer">
+          <input
+            type="checkbox"
+            value=""
+            id="toggle3"
+            onchange="saklar()"
+            class="sr-only peer"
+            
+          />
+          <div
+            class="relative w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600 dark:peer-checked:bg-blue-600"
+          ></div>
+          <span
+            class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300"
+          ></span>
+        </label>
+    </div>
+
+        <!-- <button
+          onclick="saklar('on3')"
+          class="bg-indigo-500 hover:bg-green-500 rounded-lg text-white text-xl"
+        >
+          Nyalakan lampu 3
+        </button>
+        <button
+          onclick="saklar('off3')"
+          class="bg-red-500 hover:bg-yellow-500 rounded-lg text-white text-xl"
+        >
+          Matikan lampu 3 -->
+        </button>
+      </div>
+    </div>
+
+    <!-- script js -->
+    <script src="saklar.js"></script>
+  </body>
+</html>
